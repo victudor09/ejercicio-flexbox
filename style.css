@@ -1,0 +1,120 @@
+*{
+    margin
+   : 0;
+    padding
+   : 0;
+    box-sizing
+   : border-box
+   ;
+    text-decoration
+   : none
+   ;
+   }
+   
+   .cajaglobal {
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       background-color: grey;
+   }
+
+   
+   .cajaglobal .caja1, .caja2, .caja3, .cajadcha {
+       display: flex;
+       gap: 10px;
+       /*margin-bottom: 10px;*/
+   }
+   
+   .cajaizq {
+        display: flex;
+       flex-grow: 3;
+       flex-basis: 0;
+       width: 80%;
+       flex-direction: column;
+       gap: 10px;
+   }
+   
+       .caja1 {
+       display: flex;
+       position: relative;
+       justify-content: space-evenly;
+       border: 5px solid red;
+       }
+   
+       .caja1 > div {
+           border: 1px solid blue;
+           width: 200px;
+           height: 150px;
+         }
+
+        .caja1 img, .caja2 img, .caja3 img, .cajadcha img {
+            object-fit: cover;
+            width: 100%;
+           height: 100%;
+        }
+   
+       .es, .arg, .alem {
+           width: 100%;
+           flex-wrap: wrap;
+           
+       }
+
+       .caja2 {
+           display: flex;
+           position: relative;
+           justify-content: space-around;
+           border: 5px solid yellow;
+           /*width: 80%;*/
+           }
+       
+           .caja2 > div {
+                border: 1px solid blue;
+                width: 200px;
+                height: 150px;
+             }
+       
+           .fra, .ita {
+               width: 100%;
+               flex-wrap: wrap;
+           }
+
+        .caja3 {
+           display: flex;
+           position: relative;
+           justify-content: space-evenly;
+           border: 5px solid pink;
+           
+           }
+       
+           .caja3 > div {
+               border: 1px solid blue;
+               width: 200px;
+                height: 150px;
+             }
+       
+           .tai, .cat, .ben, .emir {
+               width: 100%;
+               flex-wrap: wrap;
+           }
+   
+           .cajadcha {
+               display: flex;
+               flex-direction: column;
+               flex-grow: 1;
+               flex-basis: 0;
+               align-items: center; /* Me las centra en vertical*/
+               border: 5px solid magenta;
+               width: 20%;
+               
+               }
+           
+               .cajadcha div {
+                   border: 1px solid blue;
+                   width: 200px;
+                   height: 150px;
+                   }
+           
+               .jap, .pan, .dom, .usa {
+                   width: 25%;
+                   
+               }
